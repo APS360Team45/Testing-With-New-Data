@@ -12,6 +12,7 @@ import os
 from PIL import Image
 import PIL
 import math
+from tqdm import tqdm
 from definitions import FruitRipenessDetector, evaluate
 
 extensions = ['.jpg', '.jpeg', '.png', '.heic']
@@ -46,45 +47,50 @@ def process_imgs(folder):
 
                 total_images += 1
 
-    for fruit in os.listdir(folder):
-        n_path = os.path.join(folder, fruit)
+    # Use tqdm to create a progress bar
+    with tqdm(total=total_images, desc="Processing images") as pbar:
+        for fruit in os.listdir(folder):
+            n_path = os.path.join(folder, fruit)
 
-        if ".ini" in n_path:
-            continue
-
-        for ripeness, file in enumerate(os.listdir(n_path)):
-            i_path = os.path.join(n_path, file)
-
-            if ".ini" in i_path:
+            if ".ini" in n_path:
                 continue
 
-            label = ripeness
-            img_list = os.listdir(i_path)
+            for ripeness, file in enumerate(os.listdir(n_path)):
+                i_path = os.path.join(n_path, file)
 
-            for img in img_list:
-
-                if ".ini" in img:
+                if ".ini" in i_path:
                     continue
 
-                f_path = os.path.join(i_path, img)
+                label = ripeness
+                img_list = os.listdir(i_path)
 
-                image = PIL.Image.open(f_path).convert("RGB")
+                for img in img_list:
 
-                aspect_ratio = image.width / image.height
+                    if ".ini" in img:
+                        continue
 
-                if aspect_ratio < 1:
-                    new_width = 256
-                    new_height = int(new_width / aspect_ratio)
-                else:
-                    new_height = 256
-                    new_width = int(new_height * aspect_ratio)
+                    f_path = os.path.join(i_path, img)
 
-                resized_image = image.resize((new_width, new_height))
-                padded_image = PIL.ImageOps.pad(resized_image, (256, 256), color="black")
+                    image = PIL.Image.open(f_path).convert("RGB")
 
-                hsv_image = padded_image.convert("HSV")
+                    aspect_ratio = image.width / image.height
 
-                imgs.append((transform(hsv_image), torch.tensor(label)))
+                    if aspect_ratio < 1:
+                        new_width = 256
+                        new_height = int(new_width / aspect_ratio)
+                    else:
+                        new_height = 256
+                        new_width = int(new_height * aspect_ratio)
+
+                    resized_image = image.resize((new_width, new_height))
+                    padded_image = PIL.ImageOps.pad(resized_image, (256, 256), color="black")
+
+                    hsv_image = padded_image.convert("HSV")
+
+                    imgs.append((transform(hsv_image), torch.tensor(label)))
+
+                    # Update the progress bar
+                    pbar.update(1)
 
     return imgs
 
@@ -110,6 +116,10 @@ def test_eval(net, loader, folder):
     num_cols = min(num_images, 4)
     num_rows = math.ceil(num_images / num_cols)
     
+    # print(f"num_images: {num_images}")
+    # print(f"num_cols: {num_cols}")
+    # print(f"num_rows: {num_rows}")
+    
     # Create a figure and axis object for displaying the predicted labels
     fig_pred, axs_pred = plt.subplots(nrows=num_rows, ncols=num_cols, figsize=(15, 3*math.ceil((total_images)/4)), squeeze=False)
 
@@ -129,12 +139,15 @@ def test_eval(net, loader, folder):
             predictions = torch.round(outputs)
             
             for j in range(len(inputs)):
+                # count += 1
                 total += 1
                 
                 prediction = int(predictions[j].item())
                 actual = int(labels[j].item())
 
+                # Write the prediction and actual label to the file
                 f.write(f"Prediction: {prediction} Actual: {actual}\n")
+                # f.write(f"Prediction: {label_map[prediction]}\nActual: {label_map[actual]}\n\n")
                 
                 if prediction == actual:
                     correct += 1
@@ -151,8 +164,11 @@ def test_eval(net, loader, folder):
                 axs_pred_actual[j//4, j%4].set_title(f"Prediction: {label_map[int(prediction.item())]}, Actual: {label_map[int(actual.item())]}")
                 axs_pred_actual[j//4, j%4].axis('off')
 
+    # Show the plot
+    # plt.show()           
     plt.savefig('predictions.png')
     
+    # Save the plots to files
     fig_pred.savefig('predictions_pred.png')
     fig_pred_actual.savefig('predictions_pred_actual.png')
     
