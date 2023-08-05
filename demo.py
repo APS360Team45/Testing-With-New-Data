@@ -113,6 +113,9 @@ def test_eval(net, loader, folder):
     # Create a figure and axis object for displaying the predicted labels
     fig_pred, axs_pred = plt.subplots(nrows=num_rows, ncols=num_cols, figsize=(15, 3*math.ceil((total_images)/4)), squeeze=False)
 
+    # Create a figure and axis object for displaying the predicted and actual labels
+    fig_pred_actual, axs_pred_actual = plt.subplots(nrows=num_rows, ncols=num_cols, figsize=(15, 3*math.ceil((total_images)/4)), squeeze=False)
+
     # Define a dictionary to map integer labels to string labels
     label_map = {0: 'unripe', 1: 'semiripe', 2: 'ripe', 3: 'overripe'}
     
@@ -138,14 +141,20 @@ def test_eval(net, loader, folder):
                 
                 image = inputs[j]
                 prediction = predictions[j]
+                actual = labels[j]
 
                 axs_pred[j//4, j%4].imshow(images[j])
                 axs_pred[j//4, j%4].set_title(f"Prediction: {label_map[int(prediction.item())]}")
                 axs_pred[j//4, j%4].axis('off')
 
+                axs_pred_actual[j//4, j%4].imshow(images[j])
+                axs_pred_actual[j//4, j%4].set_title(f"Prediction: {label_map[int(prediction.item())]}, Actual: {label_map[int(actual.item())]}")
+                axs_pred_actual[j//4, j%4].axis('off')
+
     plt.savefig('predictions.png')
     
     fig_pred.savefig('predictions_pred.png')
+    fig_pred_actual.savefig('predictions_pred_actual.png')
     
     accuracy = correct / total
     print(f"Sample Accuracy Comparison with Human Visual: {accuracy * 100:.2f}%")
