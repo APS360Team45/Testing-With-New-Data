@@ -113,27 +113,42 @@ def test_eval(net, loader, folder):
     # Create a figure and axis object for displaying the predicted labels
     fig_pred, axs_pred = plt.subplots(nrows=num_rows, ncols=num_cols, figsize=(15, 3*math.ceil((total_images)/4)), squeeze=False)
 
-    for i, (inputs, labels) in enumerate(loader):
-        outputs = net(inputs)
-        predictions = torch.round(outputs)
+    # Define a dictionary to map integer labels to string labels
+    label_map = {0: 'unripe', 1: 'semiripe', 2: 'ripe', 3: 'overripe'}
+    
+    correct = 0
+    total = 0
+
+    with open('predictions.txt', 'w') as f:
         
-        for j in range(len(inputs)):
+        for i, (inputs, labels) in enumerate(loader):
+            outputs = net(inputs)
+            predictions = torch.round(outputs)
             
-            prediction = int(predictions[j].item())
-            actual = int(labels[j].item())
+            for j in range(len(inputs)):
+                total += 1
+                
+                prediction = int(predictions[j].item())
+                actual = int(labels[j].item())
 
-            image = inputs[j]
-            prediction = predictions[j]
-            
-            print(f"Prediction: {prediction}, Actual: {actual}")
+                f.write(f"Prediction: {prediction} Actual: {actual}\n")
+                
+                if prediction == actual:
+                    correct += 1
+                
+                image = inputs[j]
+                prediction = predictions[j]
 
-            axs_pred[j//4, j%4].imshow(images[j])
-            axs_pred[j//4, j%4].set_title(f"Prediction: {int(prediction.item())}")
-            axs_pred[j//4, j%4].axis('off')
+                axs_pred[j//4, j%4].imshow(images[j])
+                axs_pred[j//4, j%4].set_title(f"Prediction: {label_map[int(prediction.item())]}")
+                axs_pred[j//4, j%4].axis('off')
 
     plt.savefig('predictions.png')
     
     fig_pred.savefig('predictions_pred.png')
+    
+    accuracy = correct / total
+    print(f"Sample Accuracy Comparison with Human Visual: {accuracy * 100:.2f}%")
 
 MODEL_PATH = "model_ripeness_detector_bs64_lr0.001_epoch150"
 TEST_PATH = "dataset.pth"
