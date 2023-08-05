@@ -1,8 +1,13 @@
 import torch
+from torch.utils.data import DataLoader
 import torchvision.transforms as transforms
 import numpy as np
+import time
+import torch.nn as nn
+import torch.optim as optim
 import torch.nn.functional as F
 import matplotlib.pyplot as plt
+import cv2
 import os
 from PIL import Image
 import PIL
@@ -123,10 +128,13 @@ def test_eval(net, loader, folder):
             print(f"Prediction: {prediction}, Actual: {actual}")
 
             axs_pred[j//4, j%4].imshow(images[j])
+            axs_pred[j//4, j%4].set_title(f"Prediction: {int(prediction.item())}")
             axs_pred[j//4, j%4].axis('off')
 
-    plt.show()
+    plt.savefig('predictions.png')
     
+    fig_pred.savefig('predictions_pred.png')
+
 MODEL_PATH = "model_ripeness_detector_bs64_lr0.001_epoch150"
 TEST_PATH = "dataset.pth"
 FOLDER = "photos"
