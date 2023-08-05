@@ -1,102 +1,109 @@
-Prediction: 0 Actual: 0
-Prediction: 0 Actual: 0
-Prediction: 2 Actual: 0
-Prediction: 2 Actual: 1
-Prediction: 1 Actual: 1
-Prediction: 1 Actual: 1
-Prediction: 0 Actual: 1
-Prediction: 1 Actual: 1
-Prediction: 1 Actual: 1
-Prediction: 2 Actual: 1
-Prediction: 0 Actual: 1
-Prediction: 1 Actual: 1
-Prediction: 1 Actual: 1
-Prediction: 0 Actual: 1
-Prediction: 0 Actual: 1
-Prediction: 0 Actual: 1
-Prediction: 1 Actual: 1
-Prediction: 2 Actual: 2
-Prediction: 2 Actual: 2
-Prediction: 2 Actual: 2
-Prediction: 2 Actual: 2
-Prediction: 2 Actual: 2
-Prediction: 2 Actual: 2
-Prediction: 2 Actual: 2
-Prediction: 1 Actual: 2
-Prediction: 2 Actual: 2
-Prediction: 2 Actual: 2
-Prediction: 2 Actual: 2
-Prediction: 2 Actual: 2
-Prediction: 1 Actual: 2
-Prediction: 1 Actual: 2
-Prediction: 1 Actual: 2
-Prediction: 2 Actual: 2
-Prediction: 2 Actual: 2
-Prediction: 2 Actual: 2
-Prediction: 2 Actual: 2
-Prediction: 0 Actual: 2
-Prediction: 2 Actual: 2
-Prediction: 1 Actual: 2
-Prediction: 1 Actual: 2
-Prediction: 2 Actual: 2
-Prediction: 2 Actual: 2
-Prediction: 1 Actual: 2
-Prediction: 2 Actual: 2
-Prediction: 0 Actual: 2
-Prediction: 1 Actual: 2
-Prediction: 1 Actual: 2
-Prediction: 2 Actual: 0
-Prediction: 1 Actual: 0
-Prediction: 2 Actual: 0
-Prediction: 2 Actual: 1
-Prediction: 2 Actual: 1
-Prediction: 2 Actual: 1
-Prediction: 2 Actual: 1
-Prediction: 2 Actual: 1
-Prediction: 2 Actual: 1
-Prediction: 2 Actual: 1
-Prediction: 2 Actual: 1
-Prediction: 1 Actual: 1
-Prediction: 1 Actual: 1
-Prediction: 1 Actual: 1
-Prediction: 2 Actual: 1
-Prediction: 2 Actual: 1
-Prediction: 2 Actual: 1
-Prediction: 2 Actual: 1
-Prediction: 2 Actual: 1
-Prediction: 1 Actual: 2
-Prediction: 2 Actual: 2
-Prediction: 1 Actual: 2
-Prediction: 2 Actual: 0
-Prediction: 1 Actual: 1
-Prediction: 2 Actual: 1
-Prediction: 2 Actual: 1
-Prediction: 2 Actual: 1
-Prediction: 2 Actual: 1
-Prediction: 2 Actual: 1
-Prediction: 2 Actual: 1
-Prediction: 2 Actual: 1
-Prediction: 1 Actual: 1
-Prediction: 2 Actual: 1
-Prediction: 2 Actual: 1
-Prediction: 1 Actual: 1
-Prediction: 2 Actual: 1
-Prediction: 2 Actual: 1
-Prediction: 2 Actual: 1
-Prediction: 2 Actual: 1
-Prediction: 2 Actual: 1
-Prediction: 2 Actual: 1
-Prediction: 2 Actual: 1
-Prediction: 2 Actual: 1
-Prediction: 2 Actual: 1
-Prediction: 2 Actual: 1
-Prediction: 2 Actual: 1
-Prediction: 2 Actual: 1
-Prediction: 2 Actual: 2
-Prediction: 2 Actual: 2
-Prediction: 2 Actual: 2
-Prediction: 2 Actual: 2
-Prediction: 2 Actual: 2
-Prediction: 2 Actual: 2
-Prediction: 2 Actual: 2
-Prediction: 2 Actual: 2
+Prediction: 0 | Actual: 0 | File path: photos\Banana\0\20230803_190931.jpg
+Prediction: 0 | Actual: 0 | File path: photos\Banana\0\20230803_191322.jpg
+Prediction: 0 | Actual: 0 | File path: photos\Banana\0\20230803_192104.jpg
+Prediction: 0 | Actual: 0 | File path: photos\Banana\0\20230803_192115.jpg
+Prediction: 0 | Actual: 0 | File path: photos\Banana\0\20230803_192231.jpg
+Prediction: 0 | Actual: 0 | File path: photos\Banana\0\20230803_192538.jpg
+Prediction: 0 | Actual: 0 | File path: photos\Banana\0\20230803_192714.jpg
+Prediction: 0 | Actual: 0 | File path: photos\Banana\0\20230803_192728.jpg
+Prediction: 2 | Actual: 1 | File path: photos\Banana\1\20230803_190301.jpg
+Prediction: 1 | Actual: 1 | File path: photos\Banana\1\20230803_190523.jpg
+Prediction: 1 | Actual: 1 | File path: photos\Banana\1\20230803_190527.jpg
+Prediction: 1 | Actual: 1 | File path: photos\Banana\1\20230803_191119.jpg
+Prediction: 1 | Actual: 1 | File path: photos\Banana\1\20230803_191217.jpg
+Prediction: 2 | Actual: 1 | File path: photos\Banana\1\20230803_191244.jpg
+Prediction: 1 | Actual: 1 | File path: photos\Banana\1\20230803_192210.jpg
+Prediction: 1 | Actual: 1 | File path: photos\Banana\1\20230803_192517.jpg
+Prediction: 0 | Actual: 1 | File path: photos\Banana\1\20230803_192717.jpg
+Prediction: 1 | Actual: 1 | File path: photos\Banana\1\df5ee953-6aa7-48c4-b116-8410bfb88db1.jpg
+Prediction: 2 | Actual: 2 | File path: photos\Banana\2\20230803_190056.jpg
+Prediction: 2 | Actual: 2 | File path: photos\Banana\2\20230803_190124.jpg
+Prediction: 2 | Actual: 2 | File path: photos\Banana\2\20230803_190152.jpg
+Prediction: 2 | Actual: 2 | File path: photos\Banana\2\20230803_190236.jpg
+Prediction: 2 | Actual: 2 | File path: photos\Banana\2\20230803_190326.jpg
+Prediction: 2 | Actual: 2 | File path: photos\Banana\2\20230803_190333.jpg
+Prediction: 2 | Actual: 2 | File path: photos\Banana\2\20230803_190439.jpg
+Prediction: 1 | Actual: 2 | File path: photos\Banana\2\20230803_190559.jpg
+Prediction: 2 | Actual: 2 | File path: photos\Banana\2\20230803_190723.jpg
+Prediction: 2 | Actual: 2 | File path: photos\Banana\2\20230803_190727.jpg
+Prediction: 2 | Actual: 2 | File path: photos\Banana\2\20230803_191142.jpg
+Prediction: 2 | Actual: 2 | File path: photos\Banana\2\20230803_191204.jpg
+Prediction: 1 | Actual: 2 | File path: photos\Banana\2\20230803_191251.jpg
+Prediction: 1 | Actual: 2 | File path: photos\Banana\2\20230803_191738.jpg
+Prediction: 1 | Actual: 2 | File path: photos\Banana\2\20230803_191801.jpg
+Prediction: 2 | Actual: 2 | File path: photos\Banana\2\20230803_191945.jpg
+Prediction: 2 | Actual: 2 | File path: photos\Banana\2\20230803_192014.jpg
+Prediction: 2 | Actual: 2 | File path: photos\Banana\2\20230803_192021.jpg
+Prediction: 2 | Actual: 2 | File path: photos\Banana\2\20230803_192043.jpg
+Prediction: 2 | Actual: 2 | File path: photos\Banana\2\20230803_192145.jpg
+Prediction: 1 | Actual: 2 | File path: photos\Banana\2\20230803_192157.jpg
+Prediction: 1 | Actual: 2 | File path: photos\Banana\2\20230803_192301.jpg
+Prediction: 2 | Actual: 2 | File path: photos\Banana\2\20230803_192453.jpg
+Prediction: 2 | Actual: 2 | File path: photos\Banana\2\20230803_192557.jpg
+Prediction: 2 | Actual: 2 | File path: photos\Banana\2\20230803_192609.jpg
+Prediction: 1 | Actual: 2 | File path: photos\Banana\2\20230803_192632.jpg
+Prediction: 2 | Actual: 2 | File path: photos\Banana\2\20230803_192703.jpg
+Prediction: 1 | Actual: 2 | File path: photos\Banana\2\20230803_192737.jpg
+Prediction: 1 | Actual: 2 | File path: photos\Banana\2\20230803_192818.jpg
+Prediction: 2 | Actual: 1 | File path: photos\Mango\1\20230803_193432.jpg
+Prediction: 1 | Actual: 1 | File path: photos\Mango\1\20230803_193738.jpg
+Prediction: 2 | Actual: 1 | File path: photos\Mango\1\20230803_193947.jpg
+Prediction: 2 | Actual: 2 | File path: photos\Mango\2\20230803_193317.jpg
+Prediction: 2 | Actual: 2 | File path: photos\Mango\2\20230803_193332.jpg
+Prediction: 2 | Actual: 2 | File path: photos\Mango\2\20230803_193351.jpg
+Prediction: 2 | Actual: 2 | File path: photos\Mango\2\20230803_193409.jpg
+Prediction: 2 | Actual: 2 | File path: photos\Mango\2\20230803_193453.jpg
+Prediction: 2 | Actual: 2 | File path: photos\Mango\2\20230803_193511.jpg
+Prediction: 2 | Actual: 2 | File path: photos\Mango\2\20230803_193517.jpg
+Prediction: 2 | Actual: 2 | File path: photos\Mango\2\20230803_193536.jpg
+Prediction: 1 | Actual: 2 | File path: photos\Mango\2\20230803_193548.jpg
+Prediction: 1 | Actual: 2 | File path: photos\Mango\2\20230803_193555.jpg
+Prediction: 1 | Actual: 2 | File path: photos\Mango\2\20230803_193712.jpg
+Prediction: 2 | Actual: 2 | File path: photos\Mango\2\20230803_193753.jpg
+Prediction: 2 | Actual: 2 | File path: photos\Mango\2\20230803_193822.jpg
+Prediction: 2 | Actual: 2 | File path: photos\Mango\2\20230803_193931.jpg
+Prediction: 2 | Actual: 2 | File path: photos\Mango\2\20230803_193957.jpg
+Prediction: 1 | Actual: 3 | File path: photos\Mango\3\20230803_193647.jpg
+Prediction: 2 | Actual: 3 | File path: photos\Mango\3\20230803_193840.jpg
+Prediction: 1 | Actual: 3 | File path: photos\Mango\3\20230803_193916.jpg
+Prediction: 2 | Actual: 1 | File path: photos\Tomato\1\1bebc4c6-94d7-41d6-b7f8-0ad86b077ecb.jpg
+Prediction: 1 | Actual: 2 | File path: photos\Tomato\2\20230803_184321.jpg
+Prediction: 2 | Actual: 2 | File path: photos\Tomato\2\20230803_184336.jpg
+Prediction: 2 | Actual: 2 | File path: photos\Tomato\2\20230803_184418.jpg
+Prediction: 2 | Actual: 2 | File path: photos\Tomato\2\20230803_184547.jpg
+Prediction: 2 | Actual: 2 | File path: photos\Tomato\2\20230803_184558.jpg
+Prediction: 2 | Actual: 2 | File path: photos\Tomato\2\20230803_184658.jpg
+Prediction: 2 | Actual: 2 | File path: photos\Tomato\2\20230803_185452.jpg
+Prediction: 2 | Actual: 2 | File path: photos\Tomato\2\20230803_185517.jpg
+Prediction: 2 | Actual: 2 | File path: photos\Tomato\2\20230803_185531.jpg
+Prediction: 2 | Actual: 2 | File path: photos\Tomato\2\20230803_185539.jpg
+Prediction: 1 | Actual: 2 | File path: photos\Tomato\2\20230803_185559.jpg
+Prediction: 2 | Actual: 2 | File path: photos\Tomato\2\20230803_185621.jpg
+Prediction: 2 | Actual: 2 | File path: photos\Tomato\2\20230803_194833.jpg
+Prediction: 1 | Actual: 2 | File path: photos\Tomato\2\20230803_194837.jpg
+Prediction: 2 | Actual: 2 | File path: photos\Tomato\2\20230803_194852.jpg
+Prediction: 2 | Actual: 2 | File path: photos\Tomato\2\20230803_194858.jpg
+Prediction: 2 | Actual: 2 | File path: photos\Tomato\2\20230803_194901.jpg
+Prediction: 2 | Actual: 2 | File path: photos\Tomato\2\20230803_194913.jpg
+Prediction: 2 | Actual: 2 | File path: photos\Tomato\2\20230803_194922.jpg
+Prediction: 2 | Actual: 2 | File path: photos\Tomato\2\20230803_194931.jpg
+Prediction: 2 | Actual: 2 | File path: photos\Tomato\2\20230803_194942.jpg
+Prediction: 2 | Actual: 2 | File path: photos\Tomato\2\20230803_194945.jpg
+Prediction: 2 | Actual: 2 | File path: photos\Tomato\2\20230803_194956.jpg
+Prediction: 2 | Actual: 2 | File path: photos\Tomato\2\20230803_195016.jpg
+Prediction: 2 | Actual: 2 | File path: photos\Tomato\2\IMG_4580.jpg
+Prediction: 2 | Actual: 2 | File path: photos\Tomato\2\IMG_4581.jpg
+Prediction: 2 | Actual: 2 | File path: photos\Tomato\2\IMG_4582.jpg
+Prediction: 2 | Actual: 2 | File path: photos\Tomato\2\IMG_4664.jpg
+Prediction: 2 | Actual: 2 | File path: photos\Tomato\2\IMG_4665.jpg
+Prediction: 2 | Actual: 2 | File path: photos\Tomato\2\IMG_4666.jpg
+Prediction: 2 | Actual: 2 | File path: photos\Tomato\2\IMG_4667.jpg
+Prediction: 2 | Actual: 2 | File path: photos\Tomato\2\IMG_4668.jpg
+Prediction: 2 | Actual: 3 | File path: photos\Tomato\3\20230803_184547.jpg
+Prediction: 2 | Actual: 3 | File path: photos\Tomato\3\20230803_184658.jpg
+Prediction: 2 | Actual: 3 | File path: photos\Tomato\3\20230803_194913.jpg
+Prediction: 2 | Actual: 3 | File path: photos\Tomato\3\20230803_194931.jpg
+Prediction: 2 | Actual: 3 | File path: photos\Tomato\3\20230803_194956.jpg
+Prediction: 2 | Actual: 3 | File path: photos\Tomato\3\20230803_195016.jpg
+Prediction: 2 | Actual: 3 | File path: photos\Tomato\3\IMG_4665.jpg
+Prediction: 2 | Actual: 3 | File path: photos\Tomato\3\IMG_4666.jpg
